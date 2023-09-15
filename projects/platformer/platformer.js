@@ -43,10 +43,9 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-    createPlatform,(400,500,200,100); //short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform,(250,300,20); //short but wide platform located 500 pixels from the right of the screen and 300 pixels from the top of the screen
-   
-
+    createPlatform(300, 650, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(500, 300, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(200, 240, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     
     // TODO 2
     // Create collectables
@@ -56,7 +55,7 @@ $(function () {
     createCollectable('coin',350,250,0,0)
     createCollectable('coin',250,150,0,0)
     createCollectable('coin',220,230,0,0)
-    createCollectable('coin',350,250,0,0)
+    createCollectable('coin',150,250,0,0)
     createCollectable('coin',210,200,0,0)
 
     // TODO 3
@@ -66,10 +65,10 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
     createCannon("right", 600, 1000); // cannon on left wall, 600px down, shooting once per second 
     createCannon("bottom", 600, 1000); // cannon on left wall, 600px down, shooting once per second
-    createCannon("top", 600, 1000); // cannon on left wall, 600px down, shooting once per second
+    createCannon("top", 600, 1000); // cannon on left wall, 600px down, shooting two per second
     createCannon("bottom", 600, 1000); // cannon on left wall, 600px down, shooting once per second
     createCannon("middle left", 600, 1000); // cannon on left wall, 600px down, shooting once per second
-    
+    createCannon("middle right", 600, 1000); // cannon on left wall, 600px down, shooting once per second
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
