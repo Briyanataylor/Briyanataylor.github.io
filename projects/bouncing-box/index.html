@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Bouncing Box</title>
 	<script src="jquery.min.js"></script>
-	<style>
+	<style>  
 		.box {
 			width: 70px;
 			height: 70px;
@@ -50,7 +50,7 @@
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
-			}
+			}   
 
 			// changes the text displayed on the Box
 			function changeBoxText(newText) {
@@ -71,7 +71,7 @@
 			turn it around! 
 			*/
 			function update() {
-				
+			 moveBoxTo(boardWidth)	
 
 			};
 
