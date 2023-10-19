@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: rgb(56, 101, 101);
+			background-color: rgb(205, 62, 176);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -62,7 +62,8 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			positionX = 0;
+			changeBoxText(1);
 
 			
 			/* 
@@ -72,6 +73,7 @@
 			*/
 			function update() {
 		     /*Your code to Increase position by 10 HERE */
+			 positionX = positionX + 10;
 			 moveBoxTo(positionX);	
 
 			};
@@ -84,33 +86,9 @@
 			function handleBoxClick() {
 				positionX = 0;
 				changeBoxText (1)
-			 var positionX = 0;
-			 // during update...
-			 // Frame 1
-			 positionX = 0 + 10;     //position =10
-			 moveBoxTo(positionX);
 			 
-			 //Frame 2 
-			 positionX = 10 + 10;    // positionX = 20
-			 moveBoxTo(positionX);
 
-			 // The Box is Clicked
-			 positionX = 500;          // positionX = 0
-
-			 //back to update ...
-			 // Frame 3
-			 positionX = 0+10;       // positionX = 10
-			 moveBoxTo(positionX);
-
-			 // Frame 4
-			 positionX = 10 + 10;    // positionX = 20
-			 moveBoxTo(positionX);
-			 // so on...
-
-
-
-
-
+		
 			};
 		})();
 	</script>
