@@ -19,6 +19,9 @@
 		}
 		.board{
 			height: 100vh;
+			background-image:url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F0d%2Fff%2F12%2F0dff12883e37d102981a1cbf01401a64.png&tbnid=grom7-sTv43xyM&vet=12ahUKEwi5w4aa74SCAxXE1skDHcLkAdcQMygBegQIARBX..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F145311525464991676%2F&docid=MyzzvekEQpVqAM&w=1280&h=720&q=desktop%20sailor%20moon%20background&hl=en-US&safe=active&ved=2ahUKEwi5w4aa74SCAxXE1skDHcLkAdcQMygBegQIARBX")
+			background-size: 100%;
+			background-repeat:no-repeat:
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -62,8 +65,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			positionX = 0;
-			changeBoxText(1);
+			positionX = positionX + 10;
 
 			
 			/* 
@@ -85,7 +87,8 @@
 			*/
 			function handleBoxClick() {
 				positionX = 0;
-				changeBoxText (1)
+				changeBoxText (1);
+				changeBox (points);
 			 
 
 		
