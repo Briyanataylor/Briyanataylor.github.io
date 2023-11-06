@@ -49,7 +49,7 @@
 			
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
-			speed += 3;
+			speed += 20;
 
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
@@ -77,7 +77,7 @@
 		     /*Your code to Increase position by 10 HERE */
 			 positionX = positionX + 10;
 			 moveBoxTo(positionX);	
-			 if (conditionIsTrue){
+			 if (positionX>greater){
 				// then do X, Y, and Z
 			 }
 
