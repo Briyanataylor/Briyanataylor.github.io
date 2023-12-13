@@ -50,6 +50,9 @@ var init = function (window) {
         and check to see if it has drifted off the screen.         
         */
         function update() {
+            positonX = positionX + 10;
+            moveBoxTo(positionX);
+          };
             // TODO 4 : Update the circle's position //
  
             physikz.updatePosition(circles[0]);
