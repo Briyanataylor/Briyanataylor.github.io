@@ -38,7 +38,10 @@ var init = function (window) {
         drawCircle();
         drawCircle();
         drawCircle();
-        
+        for (var circle100 = 0; circle <100; circle100+=1){
+            drawCircle();
+
+        }
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -81,14 +84,13 @@ var init = function (window) {
         it to the opposite side of the screen.
         */
         game.checkCirclePosition = function (circle) {
-
-            // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
+            
             if (circle.x > canvas.width) {
                 circle.x = 0;
             }
 
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-
+             var 
 
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
